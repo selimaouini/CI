@@ -6,7 +6,7 @@
                 script{
                     checkout([$class: 'GitSCM', branches: [[name: '*/master']],
                         userRemoteConfigs: [[
-                            credentialsId: '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',
+                            credentialsId: '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',
                             url: 'https://github.com/selimaouini/CI.git']]])
                 }
             }
