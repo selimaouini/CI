@@ -11,5 +11,13 @@
                 }
             }
         }
+        stage('Build')
+{
+                  steps {
+                         scripts{
+                         sh "ansible-playbook ansible/build.yml -i ansible/inventory/host.yml "
+                                }
+                        }
+        }
      }
   }
